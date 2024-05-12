@@ -1,5 +1,5 @@
 /**
- * FORM FIELDS PRO CDN SCRIPT - v4.3.5
+ * FORM FIELDS PRO CDN SCRIPT - v4.3.6
  */
 
 /**
@@ -9568,7 +9568,7 @@ $(document).ready(function () {
     const extraFeedbackCollection = element.find('[data-field="extra-feedback-collection"]');
 
     if (!elementAttributes.data_extra_feedback_collection.includes("always")) {
-      extraFeedbackCollection.remove();
+      extraFeedbackCollection.hide();
     }
 
     $(this)
@@ -9587,7 +9587,7 @@ $(document).ready(function () {
               if (parseInt(value) < parseInt(extraFeedback)) {
                 element.append(extraFeedbackCollection);
               } else {
-                extraFeedbackCollection.remove();
+                extraFeedbackCollection.hide();
               }
             } else {
               extraFeedbackCollection.show();
