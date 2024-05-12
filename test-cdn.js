@@ -9585,7 +9585,7 @@ $(document).ready(function () {
           if (!extraFeedback.includes("always")) {
             if (!extraFeedback.includes("never") || !extraFeedback.includes("always")) {
               if (parseInt(value) < parseInt(extraFeedback)) {
-                element.append(extraFeedbackCollection);
+                extraFeedbackCollection.show();
               } else {
                 extraFeedbackCollection.hide();
               }
