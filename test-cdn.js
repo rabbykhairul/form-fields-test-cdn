@@ -9525,11 +9525,11 @@ $(document).ready(function () {
     });
 
     if (hasEmptyField) {
-      $(this).off("submit");
-      console.log("Form validation failed");
+      // $(this).off("submit");
+      // console.log("Form validation failed");
     } else {
-      $(this).off("submit").submit();
-      console.log("Form submitted successfully");
+      // $(this).off("submit").submit();
+      // console.log("Form submitted successfully");
     }
   });
   // })
