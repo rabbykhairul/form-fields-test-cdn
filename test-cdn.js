@@ -9510,28 +9510,28 @@ $(document).ready(function () {
     });
   });
 
-  $("form").submit(async function (e) {
-    e.preventDefault();
+  // $("form").submit(async function (e) {
+  //   e.preventDefault();
 
-    let form = $(this);
-    let hasEmptyField = false;
+  //   let form = $(this);
+  //   let hasEmptyField = false;
 
-    await form.find('input[data-email="form-field-pro-email"]').each(function () {
-      if ($(this).val().trim() === "") {
-        hasEmptyField = true;
-        const $nextElement = $(this).next(".email-error-message");
-        $nextElement.text($(this).data("empty-error-msg"));
-      }
-    });
+  //   await form.find('input[data-email="form-field-pro-email"]').each(function () {
+  //     if ($(this).val().trim() === "") {
+  //       hasEmptyField = true;
+  //       const $nextElement = $(this).next(".email-error-message");
+  //       $nextElement.text($(this).data("empty-error-msg"));
+  //     }
+  //   });
 
-    if (hasEmptyField) {
-      // $(this).off("submit");
-      // console.log("Form validation failed");
-    } else {
-      // $(this).off("submit").submit();
-      // console.log("Form submitted successfully");
-    }
-  });
+  //   if (hasEmptyField) {
+  //     // $(this).off("submit");
+  //     // console.log("Form validation failed");
+  //   } else {
+  //     // $(this).off("submit").submit();
+  //     // console.log("Form submitted successfully");
+  //   }
+  // });
   // })
 });
 
